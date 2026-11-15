@@ -1,0 +1,11 @@
+class Question03 {
+    public static void main(String[] args) {
+        Thread t = Thread.currentThread();
+
+        System.out.println("Current thread name: " + t.getName());
+        System.out.println("Thread priority: " + t.getPriority());
+
+        t.setName("MyMainThread");
+        System.out.println("Changed thread name: " + t.getName());
+    }
+}
